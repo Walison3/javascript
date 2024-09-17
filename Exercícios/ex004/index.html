@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formatando strings</title>
+    <style>
+        body{
+            background-color: rgba(47, 235, 235, 0.614);
+            color: black;
+            font: normal 18pt Arial;
+        }
+    </style>
 </head>
 <body>
+
     <script>
-        var nome = window.prompt('Qual seu nome?')
-        document.write(`Seu nome tem ${nome.length} letras.`)
+       var nome = window.prompt('Qual seu nome?')
+       document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.<br>`)
+       document.write(`Seu nome em maísculas fica ${nome.toUpperCase()}<br>`)
+       document.write(`Seu nome em minúsculas fica ${nome.toLocaleLowerCase()}`)
     </script>
 </body>
 </html>
