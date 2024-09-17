@@ -1,29 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nacionalidade</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>De qual país você é?</h1>
-    <input type="text" name="txtn1" id="txtn1">
-    <input type="button" value="Ok" onclick="selecionar()">
-    <div id="res"></div>
     
-    <script>
-        function selecionar() {
-            var txtn1 = window.document.getElementById('txtn1').value
-            var res = window.document.getElementById('res')
-
-            res.innerHTML = `<p>Vivendo em <strong>${txtn1}</strong>.</p>`
-            
-            if (txtn1 == 'Brasil') {
-                res.innerHTML += 'Você é <strong>brasileiro</strong>!'
-            } else {
-                res.innerHTML += 'Você é <strong>estrangeiro</strong>!'
-            }
-        }
-    </script>
+    <script src="ex001.js"></script>
 </body>
 </html>
