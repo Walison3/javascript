@@ -1,28 +1,27 @@
-body {
-    background-color: rgb(70, 142, 236);
-    font: normal 18pt Arial
+body{
+    background-color: #eccf7a;
+    font: normal 18pt Arial;
 }
 
-header {
-    color: white;
+header{
+    color: rgb(249, 249, 249);
     text-align: center;
 }
 
-section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 700px;
+section{
+    background-color: wheat;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.652);
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.482);
 }
 
-div {
+div{
     text-align: center;
-    padding: 8px;
+    padding: 10px;
 }
 
-footer {
-    color: white;
+footer{
+    color: rgb(255, 255, 255);
     text-align: center;
 }

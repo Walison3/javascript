@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de transito</title>
+    <style>
+        input#txtvel{
+            width: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Digite sua velocidade</h1>
-    Velocidado do carro: <input type="number" name="txtn1" id="txtn1"> Km/h.
-    <input type="button" value="Verificar" onclick="clicar()">
-    <div id="res"></div>
+    <h1>Sistemas de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res">
 
+    </div>
     <script>
-        function clicar() {
-            var txtn1 = window.document.getElementById('txtn1')
-            var res = window.document.getElementById('res')
-            var n1 = Number(txtn1.value)
-            res.innerHTML = `<p>Sua velocidade foi de <strong>${n1} Km/h</strong>.</p>`
-            
-            if (n1 > 60) {
-                res.innerHTML += '<p>Você está <strong>MULTADO</strong> por excesso de velocidade!</p>'
-            }
-
-            res.innerHTML += 'Dirija sempre com cinto de segurança.'
+        function clicar(){
+        var txtv = window.document.querySelector('input#txtvel')
+        var res = window.document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML = (`<p>Sua velocidade é de <strong>${vel} km/h</strong>.</p>`)
+        if (vel > 70) res.innerHTML += ('Você ultrapassou o limite permitido. <strong>MULTADO</strong>!')
+        res.innerHTML += (`<p>Dirija sempre com sinto de segurança!</p>`)
         }
     </script>
-
 </body>
 </html>
