@@ -28,7 +28,17 @@ function clicar() {
             }
         } else {
             genero = 'Feminino';
-            // Você pode adicionar as condições de idade para o gênero feminino aqui
+            if (idade >= 0 && idade < 13) {
+                img.setAttribute('src', 'imagens/bebe-f.png');
+            } else if (idade >= 13 && idade < 18) {
+                img.setAttribute('src', 'imagens/jovem-f.png');
+            } else if (idade < 50) {
+                img.setAttribute('src', 'imagens/adulto-f.png');
+            } else if (idade < 125) {
+                img.setAttribute('src', 'imagens/idoso-f.png');
+            } else {
+                window.alert('Atenção, verifique os dados digitados!');
+            }
         }    
         res.innerHTML = `Idade de ${idade} anos e do gênero ${genero}.`;
         res.appendChild(img);
