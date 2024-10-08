@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href="style.css">
-    <title>verificador de idade</title>
 </head>
 <body>
-    <header>
+   <header>
         <h1>Verificador de idade</h1>
-    </header>
+   </header>
     <section>
         <div>
             <p>
-                Ano de Nascimento: <input type="number" name="txtano" id="txtano" min="0">
-            </p>
-            <p>Sexo:
-                <input type="radio" name="radsex" id="masc" checked> <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem"> <label for="fem">Feminino</label>
+                Ano de nascimento:
+                <input type="number" name="anoNasc" id="ano" min="0">
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                Sexo:
+                <input type="radio" name="sexo" id="masc" checked><label for="Masculino">Masculino</label>
+                <input type="radio" name="sexo" id="fem"><label for="Feminino">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="clicar()">
             </p>
         </div>
         <div id="res">
-            Preencha os dados acima para ver o resultado
+            Preencha os dados para ver o resultado!
         </div>
     </section>
     <footer>
         <p>&copy;Walison Pinheiro</p>
     </footer>
-    <script src="jS"></script>
+    <script src="main.js"></script>
 </body>
 </html>
